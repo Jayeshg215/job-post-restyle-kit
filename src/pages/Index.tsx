@@ -1,7 +1,7 @@
-import JobPost from "@/components/JobPost";
+import HiringCard from "@/components/HiringCard";
 
 const Index = () => {
-  return <JobPost />;
+  return <HiringCard />;
 };
 
 export default Index;
