@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import VeriTechLogo from "./VeriTechLogo";
-import { Mail, Linkedin, Phone, MapPin, Clock, Users } from "lucide-react";
+import { Mail, Linkedin, Phone, MapPin, Clock, Users, Calendar, Code } from "lucide-react";
 
 const JobPost = () => {
   const handleApplyClick = () => {
@@ -23,7 +22,11 @@ const JobPost = () => {
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
               <div className="flex-1">
                 <div className="mb-6">
-                  <VeriTechLogo size={100} />
+                  <img 
+                    src="/lovable-uploads/13343726-0887-4ab9-8c2f-391147f0833d.png" 
+                    alt="VeriTech Software Services Logo"
+                    className="h-20 w-auto"
+                  />
                 </div>
                 <div className="space-y-2">
                   <Badge className="bg-white/20 text-white border-white/30 hover:bg-white/30">
@@ -63,12 +66,20 @@ const JobPost = () => {
                     <span className="text-lg">Web Developer Intern</span>
                   </div>
                   <div className="flex items-center gap-3">
+                    <MapPin className="w-5 h-5 text-primary" />
+                    <span className="text-lg">Location: Remotely / WFH</span>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Calendar className="w-5 h-5 text-primary" />
+                    <span className="text-lg">Duration: One month</span>
+                  </div>
+                  <div className="flex items-center gap-3">
                     <Clock className="w-5 h-5 text-primary" />
                     <span className="text-lg">Experience: 0-1 year / Fresher</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-primary" />
-                    <span className="text-lg">Full-time / Internship</span>
+                    <Code className="w-5 h-5 text-primary" />
+                    <span className="text-lg">Skills: HTML, CSS and basics of React/Angular</span>
                   </div>
                 </div>
               </div>
