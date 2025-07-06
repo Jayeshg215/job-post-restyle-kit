@@ -1,11 +1,7 @@
-import LinkedInPost from "@/components/LinkedInPost";
+import JobPost from "@/components/JobPost";
 
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gray-50 dark:bg-background py-8">
-      <LinkedInPost />
-    </div>
-  );
+  return <JobPost />;
 };
 
 export default Index;
